@@ -1,0 +1,3146 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20214.21.1214.2057                               -->
+<workbook original-version='18.1' source-build='2021.4.1 (20214.21.1214.2057)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='exoplanet.eu_catalog' inline='true' name='federated.03bnm1b0vs6r0q13hkead06g997y' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='exoplanet.eu_catalog' name='textscan.1aqq0ce0g2xd6k1cz00je1pcshbu'>
+            <connection class='textscan' cleaning='yes' compat='no' csvFile='E:/sotnyk/UCU/IV_year/Visualization/project/dataset/exoplanet.eu_catalog.csv' dataRefreshTime='' directory='E:/sotnyk/UCU/IV_year/Visualization/project/dataset' filename='C:/Users/danyl/AppData/Local/Temp/TableauTemp/006v6cn0fdg4zi15rx2wc0o8drma/exoplanet.eu_catalog.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+          <named-connection caption='planets' name='textscan.17utrro0snxiz419sfhsl0i3q96k'>
+            <connection class='textscan' directory='E:/sotnyk/UCU/IV_year/Visualization/project/dataset' filename='planets.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation all='true' name='exoplanet.eu_catalog.csv+' type='union'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='# name' />
+            <column datatype='string' name='planet_status' />
+            <column datatype='real' name='mass' />
+            <column datatype='real' name='mass_error_min' />
+            <column datatype='real' name='mass_error_max' />
+            <column datatype='real' name='mass_sini' />
+            <column datatype='real' name='mass_sini_error_min' />
+            <column datatype='real' name='mass_sini_error_max' />
+            <column datatype='real' name='radius' />
+            <column datatype='real' name='radius_error_min' />
+            <column datatype='real' name='radius_error_max' />
+            <column datatype='real' name='orbital_period' />
+            <column datatype='real' name='orbital_period_error_min' />
+            <column datatype='real' name='orbital_period_error_max' />
+            <column datatype='real' name='semi_major_axis' />
+            <column datatype='real' name='semi_major_axis_error_min' />
+            <column datatype='real' name='semi_major_axis_error_max' />
+            <column datatype='real' name='eccentricity' />
+            <column datatype='real' name='eccentricity_error_min' />
+            <column datatype='real' name='eccentricity_error_max' />
+            <column datatype='real' name='inclination' />
+            <column datatype='real' name='inclination_error_min' />
+            <column datatype='real' name='inclination_error_max' />
+            <column datatype='real' name='angular_distance' />
+            <column datatype='date' date-parse-format='yyyy' name='discovered' />
+            <column datatype='date' name='updated' />
+            <column datatype='real' name='omega' />
+            <column datatype='real' name='omega_error_min' />
+            <column datatype='real' name='omega_error_max' />
+            <column datatype='real' name='tperi' />
+            <column datatype='real' name='tperi_error_min' />
+            <column datatype='real' name='tperi_error_max' />
+            <column datatype='real' name='tconj' />
+            <column datatype='real' name='tconj_error_min' />
+            <column datatype='real' name='tconj_error_max' />
+            <column datatype='real' name='tzero_tr' />
+            <column datatype='real' name='tzero_tr_error_min' />
+            <column datatype='real' name='tzero_tr_error_max' />
+            <column datatype='real' name='tzero_tr_sec' />
+            <column datatype='real' name='tzero_tr_sec_error_min' />
+            <column datatype='real' name='tzero_tr_sec_error_max' />
+            <column datatype='real' name='lambda_angle' />
+            <column datatype='real' name='lambda_angle_error_min' />
+            <column datatype='real' name='lambda_angle_error_max' />
+            <column datatype='real' name='impact_parameter' />
+            <column datatype='real' name='impact_parameter_error_min' />
+            <column datatype='real' name='impact_parameter_error_max' />
+            <column datatype='real' name='tzero_vr' />
+            <column datatype='real' name='tzero_vr_error_min' />
+            <column datatype='real' name='tzero_vr_error_max' />
+            <column datatype='real' name='k' />
+            <column datatype='real' name='k_error_min' />
+            <column datatype='real' name='k_error_max' />
+            <column datatype='real' name='temp_calculated' />
+            <column datatype='real' name='temp_calculated_error_min' />
+            <column datatype='real' name='temp_calculated_error_max' />
+            <column datatype='real' name='temp_measured' />
+            <column datatype='string' name='hot_point_lon' />
+            <column datatype='real' name='geometric_albedo' />
+            <column datatype='real' name='geometric_albedo_error_min' />
+            <column datatype='real' name='geometric_albedo_error_max' />
+            <column datatype='real' name='log_g' />
+            <column datatype='string' name='publication' />
+            <column datatype='string' name='detection_type' />
+            <column datatype='string' name='mass_detection_type' />
+            <column datatype='string' name='radius_detection_type' />
+            <column datatype='string' name='alternate_names' />
+            <column datatype='string' name='molecules' />
+            <column datatype='string' name='star_name' />
+            <column datatype='real' name='ra' />
+            <column datatype='real' name='dec' />
+            <column datatype='real' name='mag_v' />
+            <column datatype='real' name='mag_i' />
+            <column datatype='real' name='mag_j' />
+            <column datatype='real' name='mag_h' />
+            <column datatype='real' name='mag_k' />
+            <column datatype='real' name='star_distance' />
+            <column datatype='real' name='star_distance_error_min' />
+            <column datatype='real' name='star_distance_error_max' />
+            <column datatype='real' name='star_metallicity' />
+            <column datatype='real' name='star_metallicity_error_min' />
+            <column datatype='real' name='star_metallicity_error_max' />
+            <column datatype='real' name='star_mass' />
+            <column datatype='real' name='star_mass_error_min' />
+            <column datatype='real' name='star_mass_error_max' />
+            <column datatype='real' name='star_radius' />
+            <column datatype='real' name='star_radius_error_min' />
+            <column datatype='real' name='star_radius_error_max' />
+            <column datatype='string' name='star_sp_type' />
+            <column datatype='real' name='star_age' />
+            <column datatype='real' name='star_age_error_min' />
+            <column datatype='real' name='star_age_error_max' />
+            <column datatype='real' name='star_teff' />
+            <column datatype='real' name='star_teff_error_min' />
+            <column datatype='real' name='star_teff_error_max' />
+            <column datatype='string' name='star_detected_disc' />
+            <column datatype='string' name='star_magnetic_field' />
+            <column datatype='string' name='star_alternate_names' />
+            <column datatype='string' name='Planet' />
+            <column datatype='string' name='Table Name' />
+          </columns>
+          <relation connection='textscan.17utrro0snxiz419sfhsl0i3q96k' name='exoplanet.eu_catalog.csv' table='[exoplanet.eu_catalog#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='# name' ordinal='0' />
+              <column datatype='string' name='planet_status' ordinal='1' />
+              <column datatype='real' name='mass' ordinal='2' />
+              <column datatype='real' name='mass_error_min' ordinal='3' />
+              <column datatype='real' name='mass_error_max' ordinal='4' />
+              <column datatype='real' name='mass_sini' ordinal='5' />
+              <column datatype='real' name='mass_sini_error_min' ordinal='6' />
+              <column datatype='real' name='mass_sini_error_max' ordinal='7' />
+              <column datatype='real' name='radius' ordinal='8' />
+              <column datatype='real' name='radius_error_min' ordinal='9' />
+              <column datatype='real' name='radius_error_max' ordinal='10' />
+              <column datatype='real' name='orbital_period' ordinal='11' />
+              <column datatype='real' name='orbital_period_error_min' ordinal='12' />
+              <column datatype='real' name='orbital_period_error_max' ordinal='13' />
+              <column datatype='real' name='semi_major_axis' ordinal='14' />
+              <column datatype='real' name='semi_major_axis_error_min' ordinal='15' />
+              <column datatype='real' name='semi_major_axis_error_max' ordinal='16' />
+              <column datatype='real' name='eccentricity' ordinal='17' />
+              <column datatype='real' name='eccentricity_error_min' ordinal='18' />
+              <column datatype='real' name='eccentricity_error_max' ordinal='19' />
+              <column datatype='real' name='inclination' ordinal='20' />
+              <column datatype='real' name='inclination_error_min' ordinal='21' />
+              <column datatype='real' name='inclination_error_max' ordinal='22' />
+              <column datatype='real' name='angular_distance' ordinal='23' />
+              <column datatype='integer' name='discovered' ordinal='24' />
+              <column datatype='date' name='updated' ordinal='25' />
+              <column datatype='real' name='omega' ordinal='26' />
+              <column datatype='real' name='omega_error_min' ordinal='27' />
+              <column datatype='real' name='omega_error_max' ordinal='28' />
+              <column datatype='real' name='tperi' ordinal='29' />
+              <column datatype='real' name='tperi_error_min' ordinal='30' />
+              <column datatype='real' name='tperi_error_max' ordinal='31' />
+              <column datatype='real' name='tconj' ordinal='32' />
+              <column datatype='real' name='tconj_error_min' ordinal='33' />
+              <column datatype='real' name='tconj_error_max' ordinal='34' />
+              <column datatype='real' name='tzero_tr' ordinal='35' />
+              <column datatype='real' name='tzero_tr_error_min' ordinal='36' />
+              <column datatype='real' name='tzero_tr_error_max' ordinal='37' />
+              <column datatype='real' name='tzero_tr_sec' ordinal='38' />
+              <column datatype='real' name='tzero_tr_sec_error_min' ordinal='39' />
+              <column datatype='real' name='tzero_tr_sec_error_max' ordinal='40' />
+              <column datatype='real' name='lambda_angle' ordinal='41' />
+              <column datatype='real' name='lambda_angle_error_min' ordinal='42' />
+              <column datatype='real' name='lambda_angle_error_max' ordinal='43' />
+              <column datatype='real' name='impact_parameter' ordinal='44' />
+              <column datatype='real' name='impact_parameter_error_min' ordinal='45' />
+              <column datatype='real' name='impact_parameter_error_max' ordinal='46' />
+              <column datatype='real' name='tzero_vr' ordinal='47' />
+              <column datatype='real' name='tzero_vr_error_min' ordinal='48' />
+              <column datatype='real' name='tzero_vr_error_max' ordinal='49' />
+              <column datatype='real' name='k' ordinal='50' />
+              <column datatype='real' name='k_error_min' ordinal='51' />
+              <column datatype='real' name='k_error_max' ordinal='52' />
+              <column datatype='real' name='temp_calculated' ordinal='53' />
+              <column datatype='real' name='temp_calculated_error_min' ordinal='54' />
+              <column datatype='real' name='temp_calculated_error_max' ordinal='55' />
+              <column datatype='real' name='temp_measured' ordinal='56' />
+              <column datatype='string' name='hot_point_lon' ordinal='57' />
+              <column datatype='real' name='geometric_albedo' ordinal='58' />
+              <column datatype='real' name='geometric_albedo_error_min' ordinal='59' />
+              <column datatype='real' name='geometric_albedo_error_max' ordinal='60' />
+              <column datatype='real' name='log_g' ordinal='61' />
+              <column datatype='string' name='publication' ordinal='62' />
+              <column datatype='string' name='detection_type' ordinal='63' />
+              <column datatype='string' name='mass_detection_type' ordinal='64' />
+              <column datatype='string' name='radius_detection_type' ordinal='65' />
+              <column datatype='string' name='alternate_names' ordinal='66' />
+              <column datatype='string' name='molecules' ordinal='67' />
+              <column datatype='string' name='star_name' ordinal='68' />
+              <column datatype='real' name='ra' ordinal='69' />
+              <column datatype='real' name='dec' ordinal='70' />
+              <column datatype='real' name='mag_v' ordinal='71' />
+              <column datatype='real' name='mag_i' ordinal='72' />
+              <column datatype='real' name='mag_j' ordinal='73' />
+              <column datatype='real' name='mag_h' ordinal='74' />
+              <column datatype='real' name='mag_k' ordinal='75' />
+              <column datatype='real' name='star_distance' ordinal='76' />
+              <column datatype='real' name='star_distance_error_min' ordinal='77' />
+              <column datatype='real' name='star_distance_error_max' ordinal='78' />
+              <column datatype='real' name='star_metallicity' ordinal='79' />
+              <column datatype='real' name='star_metallicity_error_min' ordinal='80' />
+              <column datatype='real' name='star_metallicity_error_max' ordinal='81' />
+              <column datatype='real' name='star_mass' ordinal='82' />
+              <column datatype='real' name='star_mass_error_min' ordinal='83' />
+              <column datatype='real' name='star_mass_error_max' ordinal='84' />
+              <column datatype='real' name='star_radius' ordinal='85' />
+              <column datatype='real' name='star_radius_error_min' ordinal='86' />
+              <column datatype='real' name='star_radius_error_max' ordinal='87' />
+              <column datatype='string' name='star_sp_type' ordinal='88' />
+              <column datatype='real' name='star_age' ordinal='89' />
+              <column datatype='real' name='star_age_error_min' ordinal='90' />
+              <column datatype='real' name='star_age_error_max' ordinal='91' />
+              <column datatype='real' name='star_teff' ordinal='92' />
+              <column datatype='real' name='star_teff_error_min' ordinal='93' />
+              <column datatype='real' name='star_teff_error_max' ordinal='94' />
+              <column datatype='string' name='star_detected_disc' ordinal='95' />
+              <column datatype='string' name='star_magnetic_field' ordinal='96' />
+              <column datatype='string' name='star_alternate_names' ordinal='97' />
+            </columns>
+          </relation>
+          <relation connection='textscan.17utrro0snxiz419sfhsl0i3q96k' name='planets.csv' table='[planets#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='Planet' ordinal='0' />
+              <column datatype='real' name='Mass' ordinal='1' />
+              <column datatype='real' name='Radius' ordinal='2' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation all='true' name='exoplanet.eu_catalog.csv+' type='union'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='# name' />
+            <column datatype='string' name='planet_status' />
+            <column datatype='real' name='mass' />
+            <column datatype='real' name='mass_error_min' />
+            <column datatype='real' name='mass_error_max' />
+            <column datatype='real' name='mass_sini' />
+            <column datatype='real' name='mass_sini_error_min' />
+            <column datatype='real' name='mass_sini_error_max' />
+            <column datatype='real' name='radius' />
+            <column datatype='real' name='radius_error_min' />
+            <column datatype='real' name='radius_error_max' />
+            <column datatype='real' name='orbital_period' />
+            <column datatype='real' name='orbital_period_error_min' />
+            <column datatype='real' name='orbital_period_error_max' />
+            <column datatype='real' name='semi_major_axis' />
+            <column datatype='real' name='semi_major_axis_error_min' />
+            <column datatype='real' name='semi_major_axis_error_max' />
+            <column datatype='real' name='eccentricity' />
+            <column datatype='real' name='eccentricity_error_min' />
+            <column datatype='real' name='eccentricity_error_max' />
+            <column datatype='real' name='inclination' />
+            <column datatype='real' name='inclination_error_min' />
+            <column datatype='real' name='inclination_error_max' />
+            <column datatype='real' name='angular_distance' />
+            <column datatype='date' date-parse-format='yyyy' name='discovered' />
+            <column datatype='date' name='updated' />
+            <column datatype='real' name='omega' />
+            <column datatype='real' name='omega_error_min' />
+            <column datatype='real' name='omega_error_max' />
+            <column datatype='real' name='tperi' />
+            <column datatype='real' name='tperi_error_min' />
+            <column datatype='real' name='tperi_error_max' />
+            <column datatype='real' name='tconj' />
+            <column datatype='real' name='tconj_error_min' />
+            <column datatype='real' name='tconj_error_max' />
+            <column datatype='real' name='tzero_tr' />
+            <column datatype='real' name='tzero_tr_error_min' />
+            <column datatype='real' name='tzero_tr_error_max' />
+            <column datatype='real' name='tzero_tr_sec' />
+            <column datatype='real' name='tzero_tr_sec_error_min' />
+            <column datatype='real' name='tzero_tr_sec_error_max' />
+            <column datatype='real' name='lambda_angle' />
+            <column datatype='real' name='lambda_angle_error_min' />
+            <column datatype='real' name='lambda_angle_error_max' />
+            <column datatype='real' name='impact_parameter' />
+            <column datatype='real' name='impact_parameter_error_min' />
+            <column datatype='real' name='impact_parameter_error_max' />
+            <column datatype='real' name='tzero_vr' />
+            <column datatype='real' name='tzero_vr_error_min' />
+            <column datatype='real' name='tzero_vr_error_max' />
+            <column datatype='real' name='k' />
+            <column datatype='real' name='k_error_min' />
+            <column datatype='real' name='k_error_max' />
+            <column datatype='real' name='temp_calculated' />
+            <column datatype='real' name='temp_calculated_error_min' />
+            <column datatype='real' name='temp_calculated_error_max' />
+            <column datatype='real' name='temp_measured' />
+            <column datatype='string' name='hot_point_lon' />
+            <column datatype='real' name='geometric_albedo' />
+            <column datatype='real' name='geometric_albedo_error_min' />
+            <column datatype='real' name='geometric_albedo_error_max' />
+            <column datatype='real' name='log_g' />
+            <column datatype='string' name='publication' />
+            <column datatype='string' name='detection_type' />
+            <column datatype='string' name='mass_detection_type' />
+            <column datatype='string' name='radius_detection_type' />
+            <column datatype='string' name='alternate_names' />
+            <column datatype='string' name='molecules' />
+            <column datatype='string' name='star_name' />
+            <column datatype='real' name='ra' />
+            <column datatype='real' name='dec' />
+            <column datatype='real' name='mag_v' />
+            <column datatype='real' name='mag_i' />
+            <column datatype='real' name='mag_j' />
+            <column datatype='real' name='mag_h' />
+            <column datatype='real' name='mag_k' />
+            <column datatype='real' name='star_distance' />
+            <column datatype='real' name='star_distance_error_min' />
+            <column datatype='real' name='star_distance_error_max' />
+            <column datatype='real' name='star_metallicity' />
+            <column datatype='real' name='star_metallicity_error_min' />
+            <column datatype='real' name='star_metallicity_error_max' />
+            <column datatype='real' name='star_mass' />
+            <column datatype='real' name='star_mass_error_min' />
+            <column datatype='real' name='star_mass_error_max' />
+            <column datatype='real' name='star_radius' />
+            <column datatype='real' name='star_radius_error_min' />
+            <column datatype='real' name='star_radius_error_max' />
+            <column datatype='string' name='star_sp_type' />
+            <column datatype='real' name='star_age' />
+            <column datatype='real' name='star_age_error_min' />
+            <column datatype='real' name='star_age_error_max' />
+            <column datatype='real' name='star_teff' />
+            <column datatype='real' name='star_teff_error_min' />
+            <column datatype='real' name='star_teff_error_max' />
+            <column datatype='string' name='star_detected_disc' />
+            <column datatype='string' name='star_magnetic_field' />
+            <column datatype='string' name='star_alternate_names' />
+            <column datatype='string' name='Planet' />
+            <column datatype='string' name='Table Name' />
+          </columns>
+          <relation connection='textscan.17utrro0snxiz419sfhsl0i3q96k' name='exoplanet.eu_catalog.csv' table='[exoplanet.eu_catalog#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='# name' ordinal='0' />
+              <column datatype='string' name='planet_status' ordinal='1' />
+              <column datatype='real' name='mass' ordinal='2' />
+              <column datatype='real' name='mass_error_min' ordinal='3' />
+              <column datatype='real' name='mass_error_max' ordinal='4' />
+              <column datatype='real' name='mass_sini' ordinal='5' />
+              <column datatype='real' name='mass_sini_error_min' ordinal='6' />
+              <column datatype='real' name='mass_sini_error_max' ordinal='7' />
+              <column datatype='real' name='radius' ordinal='8' />
+              <column datatype='real' name='radius_error_min' ordinal='9' />
+              <column datatype='real' name='radius_error_max' ordinal='10' />
+              <column datatype='real' name='orbital_period' ordinal='11' />
+              <column datatype='real' name='orbital_period_error_min' ordinal='12' />
+              <column datatype='real' name='orbital_period_error_max' ordinal='13' />
+              <column datatype='real' name='semi_major_axis' ordinal='14' />
+              <column datatype='real' name='semi_major_axis_error_min' ordinal='15' />
+              <column datatype='real' name='semi_major_axis_error_max' ordinal='16' />
+              <column datatype='real' name='eccentricity' ordinal='17' />
+              <column datatype='real' name='eccentricity_error_min' ordinal='18' />
+              <column datatype='real' name='eccentricity_error_max' ordinal='19' />
+              <column datatype='real' name='inclination' ordinal='20' />
+              <column datatype='real' name='inclination_error_min' ordinal='21' />
+              <column datatype='real' name='inclination_error_max' ordinal='22' />
+              <column datatype='real' name='angular_distance' ordinal='23' />
+              <column datatype='integer' name='discovered' ordinal='24' />
+              <column datatype='date' name='updated' ordinal='25' />
+              <column datatype='real' name='omega' ordinal='26' />
+              <column datatype='real' name='omega_error_min' ordinal='27' />
+              <column datatype='real' name='omega_error_max' ordinal='28' />
+              <column datatype='real' name='tperi' ordinal='29' />
+              <column datatype='real' name='tperi_error_min' ordinal='30' />
+              <column datatype='real' name='tperi_error_max' ordinal='31' />
+              <column datatype='real' name='tconj' ordinal='32' />
+              <column datatype='real' name='tconj_error_min' ordinal='33' />
+              <column datatype='real' name='tconj_error_max' ordinal='34' />
+              <column datatype='real' name='tzero_tr' ordinal='35' />
+              <column datatype='real' name='tzero_tr_error_min' ordinal='36' />
+              <column datatype='real' name='tzero_tr_error_max' ordinal='37' />
+              <column datatype='real' name='tzero_tr_sec' ordinal='38' />
+              <column datatype='real' name='tzero_tr_sec_error_min' ordinal='39' />
+              <column datatype='real' name='tzero_tr_sec_error_max' ordinal='40' />
+              <column datatype='real' name='lambda_angle' ordinal='41' />
+              <column datatype='real' name='lambda_angle_error_min' ordinal='42' />
+              <column datatype='real' name='lambda_angle_error_max' ordinal='43' />
+              <column datatype='real' name='impact_parameter' ordinal='44' />
+              <column datatype='real' name='impact_parameter_error_min' ordinal='45' />
+              <column datatype='real' name='impact_parameter_error_max' ordinal='46' />
+              <column datatype='real' name='tzero_vr' ordinal='47' />
+              <column datatype='real' name='tzero_vr_error_min' ordinal='48' />
+              <column datatype='real' name='tzero_vr_error_max' ordinal='49' />
+              <column datatype='real' name='k' ordinal='50' />
+              <column datatype='real' name='k_error_min' ordinal='51' />
+              <column datatype='real' name='k_error_max' ordinal='52' />
+              <column datatype='real' name='temp_calculated' ordinal='53' />
+              <column datatype='real' name='temp_calculated_error_min' ordinal='54' />
+              <column datatype='real' name='temp_calculated_error_max' ordinal='55' />
+              <column datatype='real' name='temp_measured' ordinal='56' />
+              <column datatype='string' name='hot_point_lon' ordinal='57' />
+              <column datatype='real' name='geometric_albedo' ordinal='58' />
+              <column datatype='real' name='geometric_albedo_error_min' ordinal='59' />
+              <column datatype='real' name='geometric_albedo_error_max' ordinal='60' />
+              <column datatype='real' name='log_g' ordinal='61' />
+              <column datatype='string' name='publication' ordinal='62' />
+              <column datatype='string' name='detection_type' ordinal='63' />
+              <column datatype='string' name='mass_detection_type' ordinal='64' />
+              <column datatype='string' name='radius_detection_type' ordinal='65' />
+              <column datatype='string' name='alternate_names' ordinal='66' />
+              <column datatype='string' name='molecules' ordinal='67' />
+              <column datatype='string' name='star_name' ordinal='68' />
+              <column datatype='real' name='ra' ordinal='69' />
+              <column datatype='real' name='dec' ordinal='70' />
+              <column datatype='real' name='mag_v' ordinal='71' />
+              <column datatype='real' name='mag_i' ordinal='72' />
+              <column datatype='real' name='mag_j' ordinal='73' />
+              <column datatype='real' name='mag_h' ordinal='74' />
+              <column datatype='real' name='mag_k' ordinal='75' />
+              <column datatype='real' name='star_distance' ordinal='76' />
+              <column datatype='real' name='star_distance_error_min' ordinal='77' />
+              <column datatype='real' name='star_distance_error_max' ordinal='78' />
+              <column datatype='real' name='star_metallicity' ordinal='79' />
+              <column datatype='real' name='star_metallicity_error_min' ordinal='80' />
+              <column datatype='real' name='star_metallicity_error_max' ordinal='81' />
+              <column datatype='real' name='star_mass' ordinal='82' />
+              <column datatype='real' name='star_mass_error_min' ordinal='83' />
+              <column datatype='real' name='star_mass_error_max' ordinal='84' />
+              <column datatype='real' name='star_radius' ordinal='85' />
+              <column datatype='real' name='star_radius_error_min' ordinal='86' />
+              <column datatype='real' name='star_radius_error_max' ordinal='87' />
+              <column datatype='string' name='star_sp_type' ordinal='88' />
+              <column datatype='real' name='star_age' ordinal='89' />
+              <column datatype='real' name='star_age_error_min' ordinal='90' />
+              <column datatype='real' name='star_age_error_max' ordinal='91' />
+              <column datatype='real' name='star_teff' ordinal='92' />
+              <column datatype='real' name='star_teff_error_min' ordinal='93' />
+              <column datatype='real' name='star_teff_error_max' ordinal='94' />
+              <column datatype='string' name='star_detected_disc' ordinal='95' />
+              <column datatype='string' name='star_magnetic_field' ordinal='96' />
+              <column datatype='string' name='star_alternate_names' ordinal='97' />
+            </columns>
+          </relation>
+          <relation connection='textscan.17utrro0snxiz419sfhsl0i3q96k' name='planets.csv' table='[planets#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='Planet' ordinal='0' />
+              <column datatype='real' name='Mass' ordinal='1' />
+              <column datatype='real' name='Radius' ordinal='2' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name># name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[# name]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias># name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>planet_status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[planet_status]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>planet_status</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mass</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mass]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>mass</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mass_error_min</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mass_error_min]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>mass_error_min</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mass_error_max</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mass_error_max]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>mass_error_max</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mass_sini</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mass_sini]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>mass_sini</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mass_sini_error_min</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mass_sini_error_min]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>mass_sini_error_min</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mass_sini_error_max</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mass_sini_error_max]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>mass_sini_error_max</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>radius</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[radius]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>radius</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>radius_error_min</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[radius_error_min]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>radius_error_min</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>radius_error_max</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[radius_error_max]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>radius_error_max</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>orbital_period</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[orbital_period]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>orbital_period</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>orbital_period_error_min</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[orbital_period_error_min]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>orbital_period_error_min</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>orbital_period_error_max</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[orbital_period_error_max]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>orbital_period_error_max</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>semi_major_axis</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[semi_major_axis]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>semi_major_axis</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>semi_major_axis_error_min</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[semi_major_axis_error_min]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>semi_major_axis_error_min</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>semi_major_axis_error_max</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[semi_major_axis_error_max]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>semi_major_axis_error_max</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>eccentricity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[eccentricity]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>eccentricity</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>eccentricity_error_min</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[eccentricity_error_min]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>eccentricity_error_min</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>eccentricity_error_max</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[eccentricity_error_max]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>eccentricity_error_max</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>inclination</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[inclination]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>inclination</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>inclination_error_min</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[inclination_error_min]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>inclination_error_min</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>inclination_error_max</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[inclination_error_max]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>inclination_error_max</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>angular_distance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[angular_distance]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>angular_distance</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>discovered</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[discovered]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>discovered</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>updated</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[updated]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>updated</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>omega</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[omega]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>omega</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>omega_error_min</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[omega_error_min]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>omega_error_min</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>omega_error_max</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[omega_error_max]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>omega_error_max</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tperi</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tperi]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>tperi</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tperi_error_min</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tperi_error_min]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>tperi_error_min</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tperi_error_max</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tperi_error_max]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>tperi_error_max</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tconj</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tconj]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>tconj</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tconj_error_min</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tconj_error_min]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>tconj_error_min</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tconj_error_max</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tconj_error_max]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>tconj_error_max</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tzero_tr</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tzero_tr]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>tzero_tr</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tzero_tr_error_min</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tzero_tr_error_min]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>tzero_tr_error_min</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tzero_tr_error_max</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tzero_tr_error_max]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>tzero_tr_error_max</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tzero_tr_sec</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tzero_tr_sec]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>tzero_tr_sec</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tzero_tr_sec_error_min</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tzero_tr_sec_error_min]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>tzero_tr_sec_error_min</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tzero_tr_sec_error_max</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tzero_tr_sec_error_max]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>tzero_tr_sec_error_max</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lambda_angle</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[lambda_angle]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>lambda_angle</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lambda_angle_error_min</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[lambda_angle_error_min]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>lambda_angle_error_min</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lambda_angle_error_max</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[lambda_angle_error_max]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>lambda_angle_error_max</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>impact_parameter</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[impact_parameter]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>impact_parameter</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>impact_parameter_error_min</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[impact_parameter_error_min]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>impact_parameter_error_min</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>impact_parameter_error_max</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[impact_parameter_error_max]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>impact_parameter_error_max</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tzero_vr</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tzero_vr]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>tzero_vr</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tzero_vr_error_min</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tzero_vr_error_min]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>tzero_vr_error_min</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tzero_vr_error_max</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tzero_vr_error_max]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>tzero_vr_error_max</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>k</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[k]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>k</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>k_error_min</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[k_error_min]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>k_error_min</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>k_error_max</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[k_error_max]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>k_error_max</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>temp_calculated</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[temp_calculated]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>temp_calculated</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>temp_calculated_error_min</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[temp_calculated_error_min]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>temp_calculated_error_min</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>temp_calculated_error_max</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[temp_calculated_error_max]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>temp_calculated_error_max</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>temp_measured</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[temp_measured]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>temp_measured</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hot_point_lon</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[hot_point_lon]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>hot_point_lon</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>geometric_albedo</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[geometric_albedo]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>geometric_albedo</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>geometric_albedo_error_min</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[geometric_albedo_error_min]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>geometric_albedo_error_min</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>geometric_albedo_error_max</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[geometric_albedo_error_max]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>geometric_albedo_error_max</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>log_g</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[log_g]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>log_g</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>publication</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[publication]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>publication</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>detection_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[detection_type]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>detection_type</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mass_detection_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[mass_detection_type]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>mass_detection_type</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>radius_detection_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[radius_detection_type]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>radius_detection_type</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>alternate_names</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[alternate_names]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>alternate_names</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>molecules</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[molecules]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>molecules</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>star_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[star_name]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>star_name</remote-alias>
+            <ordinal>68</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ra</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ra]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>ra</remote-alias>
+            <ordinal>69</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dec</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[dec]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>dec</remote-alias>
+            <ordinal>70</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mag_v</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mag_v]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>mag_v</remote-alias>
+            <ordinal>71</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mag_i</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mag_i]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>mag_i</remote-alias>
+            <ordinal>72</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mag_j</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mag_j]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>mag_j</remote-alias>
+            <ordinal>73</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mag_h</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mag_h]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>mag_h</remote-alias>
+            <ordinal>74</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mag_k</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mag_k]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>mag_k</remote-alias>
+            <ordinal>75</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>star_distance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[star_distance]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>star_distance</remote-alias>
+            <ordinal>76</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>star_distance_error_min</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[star_distance_error_min]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>star_distance_error_min</remote-alias>
+            <ordinal>77</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>star_distance_error_max</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[star_distance_error_max]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>star_distance_error_max</remote-alias>
+            <ordinal>78</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>star_metallicity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[star_metallicity]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>star_metallicity</remote-alias>
+            <ordinal>79</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>star_metallicity_error_min</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[star_metallicity_error_min]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>star_metallicity_error_min</remote-alias>
+            <ordinal>80</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>star_metallicity_error_max</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[star_metallicity_error_max]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>star_metallicity_error_max</remote-alias>
+            <ordinal>81</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>star_mass</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[star_mass]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>star_mass</remote-alias>
+            <ordinal>82</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>star_mass_error_min</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[star_mass_error_min]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>star_mass_error_min</remote-alias>
+            <ordinal>83</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>star_mass_error_max</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[star_mass_error_max]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>star_mass_error_max</remote-alias>
+            <ordinal>84</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>star_radius</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[star_radius]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>star_radius</remote-alias>
+            <ordinal>85</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>star_radius_error_min</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[star_radius_error_min]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>star_radius_error_min</remote-alias>
+            <ordinal>86</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>star_radius_error_max</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[star_radius_error_max]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>star_radius_error_max</remote-alias>
+            <ordinal>87</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>star_sp_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[star_sp_type]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>star_sp_type</remote-alias>
+            <ordinal>88</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>star_age</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[star_age]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>star_age</remote-alias>
+            <ordinal>89</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>star_age_error_min</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[star_age_error_min]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>star_age_error_min</remote-alias>
+            <ordinal>90</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>star_age_error_max</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[star_age_error_max]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>star_age_error_max</remote-alias>
+            <ordinal>91</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>star_teff</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[star_teff]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>star_teff</remote-alias>
+            <ordinal>92</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>star_teff_error_min</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[star_teff_error_min]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>star_teff_error_min</remote-alias>
+            <ordinal>93</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>star_teff_error_max</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[star_teff_error_max]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>star_teff_error_max</remote-alias>
+            <ordinal>94</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>star_detected_disc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[star_detected_disc]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>star_detected_disc</remote-alias>
+            <ordinal>95</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>star_magnetic_field</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[star_magnetic_field]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>star_magnetic_field</remote-alias>
+            <ordinal>96</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>star_alternate_names</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[star_alternate_names]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>star_alternate_names</remote-alias>
+            <ordinal>97</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Planet</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Planet]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>Planet</remote-alias>
+            <ordinal>98</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Name]</local-name>
+            <parent-name>[exoplanet.eu_catalog.csv+]</parent-name>
+            <remote-alias>Table Name</remote-alias>
+            <ordinal>99</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='# Name' datatype='string' name='[# name]' role='dimension' type='nominal' />
+      <column caption='Calculate Planets' datatype='integer' name='[Calculation_1019502419249688576]' role='measure' type='ordinal'>
+        <calculation class='tableau' formula='COUNT([Planet])' />
+      </column>
+      <column caption='Exoplanets' datatype='string' name='[Calculation_1019502419257606145]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF ([Planet] &lt;&gt; NULL)THEN[# name]END' />
+      </column>
+      <column caption='Bigger size' datatype='real' name='[Calculation_1019502419259830274]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='IF ([Planet] &lt;&gt; &quot;NULL&quot;) THEN 1.6 ELSE 1.5 END' />
+      </column>
+      <column caption='Planet Name' datatype='string' name='[Calculation_1019502419302301699]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF ([Planet] &lt;&gt; &quot;NULL&quot;) THEN [Planet] ELSE [# name] END' />
+      </column>
+      <column caption='Star Class' datatype='string' name='[Calculation_229965108913614848]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='LEFT([star_sp_type],1)' />
+      </column>
+      <column caption='Count names' datatype='integer' name='[Calculation_229965109124161537]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([# name])' />
+      </column>
+      <column caption='Planet1' datatype='string' name='[Planet]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='%null%' value='Exoplanet' />
+        </aliases>
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='exoplanet.eu_catalog.csv' datatype='table' name='[__tableau_internal_object_id__].[exoplanet.eu_catalog.csv_CF004ABE19CE4043A12DFBE94FF8C55B]' role='measure' type='quantitative' />
+      <column caption='Alternate Names' datatype='string' name='[alternate_names]' role='dimension' type='nominal' />
+      <column caption='Angular Distance' datatype='real' name='[angular_distance]' role='measure' type='quantitative' />
+      <column caption='Dec' datatype='real' name='[dec]' role='measure' type='quantitative' />
+      <column caption='Detection Type' datatype='string' name='[detection_type]' role='dimension' type='nominal' />
+      <column caption='Discovered' datatype='date' name='[discovered]' role='dimension' type='quantitative' />
+      <column caption='Eccentricity' datatype='real' name='[eccentricity]' role='measure' type='quantitative' />
+      <column caption='Eccentricity Error Max' datatype='real' name='[eccentricity_error_max]' role='measure' type='quantitative' />
+      <column caption='Eccentricity Error Min' datatype='real' name='[eccentricity_error_min]' role='measure' type='quantitative' />
+      <column caption='Geometric Albedo' datatype='real' name='[geometric_albedo]' role='measure' type='quantitative' />
+      <column caption='Geometric Albedo Error Max' datatype='real' name='[geometric_albedo_error_max]' role='measure' type='quantitative' />
+      <column caption='Geometric Albedo Error Min' datatype='real' name='[geometric_albedo_error_min]' role='measure' type='quantitative' />
+      <column caption='Hot Point Lon' datatype='string' name='[hot_point_lon]' role='dimension' type='nominal' />
+      <column caption='Impact Parameter' datatype='real' name='[impact_parameter]' role='measure' type='quantitative' />
+      <column caption='Impact Parameter Error Max' datatype='real' name='[impact_parameter_error_max]' role='measure' type='quantitative' />
+      <column caption='Impact Parameter Error Min' datatype='real' name='[impact_parameter_error_min]' role='measure' type='quantitative' />
+      <column caption='Inclination' datatype='real' name='[inclination]' role='measure' type='quantitative' />
+      <column caption='Inclination Error Max' datatype='real' name='[inclination_error_max]' role='measure' type='quantitative' />
+      <column caption='Inclination Error Min' datatype='real' name='[inclination_error_min]' role='measure' type='quantitative' />
+      <column caption='K' datatype='real' name='[k]' role='measure' type='quantitative' />
+      <column caption='K Error Max' datatype='real' name='[k_error_max]' role='measure' type='quantitative' />
+      <column caption='K Error Min' datatype='real' name='[k_error_min]' role='measure' type='quantitative' />
+      <column caption='Lambda Angle' datatype='real' name='[lambda_angle]' role='measure' type='quantitative' />
+      <column caption='Lambda Angle Error Max' datatype='real' name='[lambda_angle_error_max]' role='measure' type='quantitative' />
+      <column caption='Lambda Angle Error Min' datatype='real' name='[lambda_angle_error_min]' role='measure' type='quantitative' />
+      <column caption='Log G' datatype='real' name='[log_g]' role='measure' type='quantitative' />
+      <column caption='Mag H' datatype='real' name='[mag_h]' role='measure' type='quantitative' />
+      <column caption='Mag I' datatype='real' name='[mag_i]' role='measure' type='quantitative' />
+      <column caption='Mag J' datatype='real' name='[mag_j]' role='measure' type='quantitative' />
+      <column caption='Mag K' datatype='real' name='[mag_k]' role='measure' type='quantitative' />
+      <column caption='Mag V' datatype='real' name='[mag_v]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Mass' datatype='real' name='[mass]' role='dimension' type='quantitative' />
+      <column caption='Mass Detection Type' datatype='string' name='[mass_detection_type]' role='dimension' type='nominal' />
+      <column caption='Mass Error Max' datatype='real' name='[mass_error_max]' role='measure' type='quantitative' />
+      <column caption='Mass Error Min' datatype='real' name='[mass_error_min]' role='measure' type='quantitative' />
+      <column caption='Mass Sini' datatype='real' name='[mass_sini]' role='measure' type='quantitative' />
+      <column caption='Mass Sini Error Max' datatype='real' name='[mass_sini_error_max]' role='measure' type='quantitative' />
+      <column caption='Mass Sini Error Min' datatype='real' name='[mass_sini_error_min]' role='measure' type='quantitative' />
+      <column caption='Molecules' datatype='string' name='[molecules]' role='dimension' type='nominal' />
+      <column caption='Omega' datatype='real' name='[omega]' role='measure' type='quantitative' />
+      <column caption='Omega Error Max' datatype='real' name='[omega_error_max]' role='measure' type='quantitative' />
+      <column caption='Omega Error Min' datatype='real' name='[omega_error_min]' role='measure' type='quantitative' />
+      <column caption='Orbital Period' datatype='real' name='[orbital_period]' role='measure' type='quantitative' />
+      <column caption='Orbital Period Error Max' datatype='real' name='[orbital_period_error_max]' role='measure' type='quantitative' />
+      <column caption='Orbital Period Error Min' datatype='real' name='[orbital_period_error_min]' role='measure' type='quantitative' />
+      <column caption='Planet Status' datatype='string' name='[planet_status]' role='dimension' type='nominal' />
+      <column caption='Publication' datatype='string' name='[publication]' role='dimension' type='nominal' />
+      <column caption='Ra' datatype='real' name='[ra]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Radius' datatype='real' name='[radius]' role='dimension' type='quantitative' />
+      <column caption='Radius Detection Type' datatype='string' name='[radius_detection_type]' role='dimension' type='nominal' />
+      <column caption='Radius Error Max' datatype='real' name='[radius_error_max]' role='measure' type='quantitative' />
+      <column caption='Radius Error Min' datatype='real' name='[radius_error_min]' role='measure' type='quantitative' />
+      <column caption='Semi Major Axis' datatype='real' name='[semi_major_axis]' role='measure' type='quantitative' />
+      <column caption='Semi Major Axis Error Max' datatype='real' name='[semi_major_axis_error_max]' role='measure' type='quantitative' />
+      <column caption='Semi Major Axis Error Min' datatype='real' name='[semi_major_axis_error_min]' role='measure' type='quantitative' />
+      <column caption='Star Age' datatype='real' name='[star_age]' role='measure' type='quantitative' />
+      <column caption='Star Age Error Max' datatype='real' name='[star_age_error_max]' role='measure' type='quantitative' />
+      <column caption='Star Age Error Min' datatype='real' name='[star_age_error_min]' role='measure' type='quantitative' />
+      <column caption='Star Alternate Names' datatype='string' name='[star_alternate_names]' role='dimension' type='nominal' />
+      <column caption='Star Detected Disc' datatype='string' name='[star_detected_disc]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='Star Distance' datatype='real' name='[star_distance]' role='dimension' type='quantitative' />
+      <column caption='Star Distance Error Max' datatype='real' name='[star_distance_error_max]' role='measure' type='quantitative' />
+      <column caption='Star Distance Error Min' datatype='real' name='[star_distance_error_min]' role='measure' type='quantitative' />
+      <column caption='Star Magnetic Field' datatype='string' name='[star_magnetic_field]' role='dimension' type='nominal' />
+      <column caption='Star Mass' datatype='real' name='[star_mass]' role='measure' type='quantitative' />
+      <column caption='Star Mass Error Max' datatype='real' name='[star_mass_error_max]' role='measure' type='quantitative' />
+      <column caption='Star Mass Error Min' datatype='real' name='[star_mass_error_min]' role='measure' type='quantitative' />
+      <column caption='Star Metallicity' datatype='real' name='[star_metallicity]' role='measure' type='quantitative' />
+      <column caption='Star Metallicity Error Max' datatype='real' name='[star_metallicity_error_max]' role='measure' type='quantitative' />
+      <column caption='Star Metallicity Error Min' datatype='real' name='[star_metallicity_error_min]' role='measure' type='quantitative' />
+      <column caption='Star Name' datatype='string' name='[star_name]' role='dimension' type='nominal' />
+      <column caption='Star Radius' datatype='real' name='[star_radius]' role='measure' type='quantitative' />
+      <column caption='Star Radius Error Max' datatype='real' name='[star_radius_error_max]' role='measure' type='quantitative' />
+      <column caption='Star Radius Error Min' datatype='real' name='[star_radius_error_min]' role='measure' type='quantitative' />
+      <column caption='Star Sp Type' datatype='string' name='[star_sp_type]' role='dimension' type='nominal' />
+      <column caption='Star Teff' datatype='real' name='[star_teff]' role='measure' type='quantitative' />
+      <column caption='Star Teff Error Max' datatype='real' name='[star_teff_error_max]' role='measure' type='quantitative' />
+      <column caption='Star Teff Error Min' datatype='real' name='[star_teff_error_min]' role='measure' type='quantitative' />
+      <column caption='Tconj' datatype='real' name='[tconj]' role='measure' type='quantitative' />
+      <column caption='Tconj Error Max' datatype='real' name='[tconj_error_max]' role='measure' type='quantitative' />
+      <column caption='Tconj Error Min' datatype='real' name='[tconj_error_min]' role='measure' type='quantitative' />
+      <column caption='Temp Calculated' datatype='real' name='[temp_calculated]' role='measure' type='quantitative' />
+      <column caption='Temp Calculated Error Max' datatype='real' name='[temp_calculated_error_max]' role='measure' type='quantitative' />
+      <column caption='Temp Calculated Error Min' datatype='real' name='[temp_calculated_error_min]' role='measure' type='quantitative' />
+      <column caption='Temp Measured' datatype='real' name='[temp_measured]' role='measure' type='quantitative' />
+      <column caption='Tperi' datatype='real' name='[tperi]' role='measure' type='quantitative' />
+      <column caption='Tperi Error Max' datatype='real' name='[tperi_error_max]' role='measure' type='quantitative' />
+      <column caption='Tperi Error Min' datatype='real' name='[tperi_error_min]' role='measure' type='quantitative' />
+      <column caption='Tzero Tr' datatype='real' name='[tzero_tr]' role='measure' type='quantitative' />
+      <column caption='Tzero Tr Error Max' datatype='real' name='[tzero_tr_error_max]' role='measure' type='quantitative' />
+      <column caption='Tzero Tr Error Min' datatype='real' name='[tzero_tr_error_min]' role='measure' type='quantitative' />
+      <column caption='Tzero Tr Sec' datatype='real' name='[tzero_tr_sec]' role='measure' type='quantitative' />
+      <column caption='Tzero Tr Sec Error Max' datatype='real' name='[tzero_tr_sec_error_max]' role='measure' type='quantitative' />
+      <column caption='Tzero Tr Sec Error Min' datatype='real' name='[tzero_tr_sec_error_min]' role='measure' type='quantitative' />
+      <column caption='Tzero Vr' datatype='real' name='[tzero_vr]' role='measure' type='quantitative' />
+      <column caption='Tzero Vr Error Max' datatype='real' name='[tzero_vr_error_max]' role='measure' type='quantitative' />
+      <column caption='Tzero Vr Error Min' datatype='real' name='[tzero_vr_error_min]' role='measure' type='quantitative' />
+      <column caption='Updated' datatype='date' name='[updated]' role='dimension' type='ordinal' />
+      <column-instance column='[Calculation_229965108913614848]' derivation='Attribute' name='[attr:Calculation_229965108913614848:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_1019502419259830274]' derivation='None' name='[none:Calculation_1019502419259830274:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Calculation_229965108913614848]' derivation='None' name='[none:Calculation_229965108913614848:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Planet]' derivation='None' name='[none:Planet:nk]' pivot='key' type='nominal' />
+      <column-instance column='[detection_type]' derivation='None' name='[none:detection_type:nk]' pivot='key' type='nominal' />
+      <column-instance column='[mass]' derivation='None' name='[none:mass:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[radius]' derivation='None' name='[none:radius:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_229965109124161537]' derivation='User' name='[usr:Calculation_229965109124161537:qk]' pivot='key' type='quantitative' />
+      <group caption='Action (Detection Type)' hidden='true' name='[Action (Detection Type)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[detection_type]' />
+        </groupfilter>
+      </group>
+      <group hidden='true' name='[Exclusions (Bigger size,Mass,Planet,Radius)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Calculation_1019502419259830274:ok]' />
+          <groupfilter function='level-members' level='[none:mass:qk]' />
+          <groupfilter function='level-members' level='[none:Planet:nk]' />
+          <groupfilter function='level-members' level='[none:radius:qk]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Calculation_229965108913614848:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;L&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#7ea1ff'>
+              <bucket>&quot;W&quot;</bucket>
+            </map>
+            <map to='#a2c0ff'>
+              <bucket>&quot;B&quot;</bucket>
+            </map>
+            <map to='#b67c7c'>
+              <bucket>&quot;D&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;T&quot;</bucket>
+            </map>
+            <map to='#d5e0ff'>
+              <bucket>&quot;A&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;P&quot;</bucket>
+            </map>
+            <map to='#f9f5ff'>
+              <bucket>&quot;F&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;s&quot;</bucket>
+            </map>
+            <map to='#ffbc6c'>
+              <bucket>&quot;M&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;C&quot;</bucket>
+            </map>
+            <map to='#ffdab5'>
+              <bucket>&quot;K&quot;</bucket>
+            </map>
+            <map to='#ffede3'>
+              <bucket>&quot;G&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='shape' field='[none:Calculation_229965108913614848:nk]' type='shape'>
+            <map to='asterisk'>
+              <bucket>&quot;K&quot;</bucket>
+            </map>
+            <map to='circle'>
+              <bucket>&quot;B&quot;</bucket>
+            </map>
+            <map to='diamond'>
+              <bucket>&quot;M&quot;</bucket>
+            </map>
+            <map to='down-triangle'>
+              <bucket>&quot;P&quot;</bucket>
+            </map>
+            <map to='left-triangle'>
+              <bucket>&quot;T&quot;</bucket>
+            </map>
+            <map to='plus'>
+              <bucket>&quot;F&quot;</bucket>
+            </map>
+            <map to='right-triangle'>
+              <bucket>&quot;W&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;A&quot;</bucket>
+            </map>
+            <map to='times'>
+              <bucket>&quot;G&quot;</bucket>
+            </map>
+            <map to='triangle'>
+              <bucket>&quot;D&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[attr:Calculation_229965108913614848:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;L&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#7ea1ff'>
+              <bucket>&quot;W&quot;</bucket>
+            </map>
+            <map to='#a2c0ff'>
+              <bucket>&quot;B&quot;</bucket>
+            </map>
+            <map to='#b67c7c'>
+              <bucket>&quot;D&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;T&quot;</bucket>
+            </map>
+            <map to='#d5e0ff'>
+              <bucket>&quot;A&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;P&quot;</bucket>
+            </map>
+            <map to='#f9f5ff'>
+              <bucket>&quot;F&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;s&quot;</bucket>
+            </map>
+            <map to='#ffbc6c'>
+              <bucket>&quot;M&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;C&quot;</bucket>
+            </map>
+            <map to='#ffdab5'>
+              <bucket>&quot;K&quot;</bucket>
+            </map>
+            <map to='#ffede3'>
+              <bucket>&quot;G&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='shape' field='[attr:Calculation_229965108913614848:nk]' type='shape'>
+            <map to='asterisk'>
+              <bucket>&quot;K&quot;</bucket>
+            </map>
+            <map to='circle'>
+              <bucket>&quot;B&quot;</bucket>
+            </map>
+            <map to='diamond'>
+              <bucket>&quot;M&quot;</bucket>
+            </map>
+            <map to='down-triangle'>
+              <bucket>&quot;P&quot;</bucket>
+            </map>
+            <map to='left-triangle'>
+              <bucket>&quot;T&quot;</bucket>
+            </map>
+            <map to='plus'>
+              <bucket>&quot;F&quot;</bucket>
+            </map>
+            <map to='right-triangle'>
+              <bucket>&quot;W&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;A&quot;</bucket>
+            </map>
+            <map to='times'>
+              <bucket>&quot;G&quot;</bucket>
+            </map>
+            <map to='triangle'>
+              <bucket>&quot;D&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;[federated.03bnm1b0vs6r0q13hkead06g997y].[sum:geometric_albedo:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.03bnm1b0vs6r0q13hkead06g997y].[sum:Mass:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.03bnm1b0vs6r0q13hkead06g997y].[sum:dec:qk]&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;[federated.03bnm1b0vs6r0q13hkead06g997y].[sum:impact_parameter:qk]&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;[federated.03bnm1b0vs6r0q13hkead06g997y].[sum:geometric_albedo_error_max:qk]&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;[federated.03bnm1b0vs6r0q13hkead06g997y].[sum:eccentricity:qk]&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;[federated.03bnm1b0vs6r0q13hkead06g997y].[sum:k:qk]&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;[federated.03bnm1b0vs6r0q13hkead06g997y].[sum:lambda_angle:qk]&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;[federated.03bnm1b0vs6r0q13hkead06g997y].[sum:angular_distance:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.03bnm1b0vs6r0q13hkead06g997y].[sum:inclination_error_max:qk]&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;[federated.03bnm1b0vs6r0q13hkead06g997y].[sum:eccentricity_error_max:qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.03bnm1b0vs6r0q13hkead06g997y].[sum:impact_parameter_error_max:qk]&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;[federated.03bnm1b0vs6r0q13hkead06g997y].[sum:impact_parameter_error_min:qk]&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;[federated.03bnm1b0vs6r0q13hkead06g997y].[sum:inclination_error_min:qk]&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;[federated.03bnm1b0vs6r0q13hkead06g997y].[sum:k_error_min:qk]&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;[federated.03bnm1b0vs6r0q13hkead06g997y].[sum:k_error_max:qk]&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;[federated.03bnm1b0vs6r0q13hkead06g997y].[sum:lambda_angle_error_max:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.03bnm1b0vs6r0q13hkead06g997y].[sum:Radius:qk]&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;[federated.03bnm1b0vs6r0q13hkead06g997y].[sum:eccentricity_error_min:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.03bnm1b0vs6r0q13hkead06g997y]&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;[federated.03bnm1b0vs6r0q13hkead06g997y].[sum:inclination:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;[federated.03bnm1b0vs6r0q13hkead06g997y].[sum:geometric_albedo_error_min:qk]&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;[federated.03bnm1b0vs6r0q13hkead06g997y].[usr:Calculation_229965109124161537:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:detection_type:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Primary Transit&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Timing&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Imaging&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;TTV&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Microlensing&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Default&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Radial Velocity&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Astrometry&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Planet:nk]' type='palette'>
+            <map to='#13f1ea'>
+              <bucket>&quot;Neptune&quot;</bucket>
+            </map>
+            <map to='#1a90cf'>
+              <bucket>&quot;Earth&quot;</bucket>
+            </map>
+            <map to='#2e66ff'>
+              <bucket>&quot;Uranus&quot;</bucket>
+            </map>
+            <map to='#575359'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#b7875d'>
+              <bucket>&quot;Mercury&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Pluto&quot;</bucket>
+            </map>
+            <map to='#ee4527'>
+              <bucket>&quot;Mars&quot;</bucket>
+            </map>
+            <map to='#f1c524'>
+              <bucket>&quot;Saturn&quot;</bucket>
+            </map>
+            <map to='#ff6c0a'>
+              <bucket>&quot;Jupiter&quot;</bucket>
+            </map>
+            <map to='#ff9925'>
+              <bucket>&quot;Venus&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Ukraine&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='exoplanet.eu_catalog.csv' id='exoplanet.eu_catalog.csv_CF004ABE19CE4043A12DFBE94FF8C55B'>
+            <properties context=''>
+              <relation all='true' name='exoplanet.eu_catalog.csv+' type='union'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='# name' />
+                  <column datatype='string' name='planet_status' />
+                  <column datatype='real' name='mass' />
+                  <column datatype='real' name='mass_error_min' />
+                  <column datatype='real' name='mass_error_max' />
+                  <column datatype='real' name='mass_sini' />
+                  <column datatype='real' name='mass_sini_error_min' />
+                  <column datatype='real' name='mass_sini_error_max' />
+                  <column datatype='real' name='radius' />
+                  <column datatype='real' name='radius_error_min' />
+                  <column datatype='real' name='radius_error_max' />
+                  <column datatype='real' name='orbital_period' />
+                  <column datatype='real' name='orbital_period_error_min' />
+                  <column datatype='real' name='orbital_period_error_max' />
+                  <column datatype='real' name='semi_major_axis' />
+                  <column datatype='real' name='semi_major_axis_error_min' />
+                  <column datatype='real' name='semi_major_axis_error_max' />
+                  <column datatype='real' name='eccentricity' />
+                  <column datatype='real' name='eccentricity_error_min' />
+                  <column datatype='real' name='eccentricity_error_max' />
+                  <column datatype='real' name='inclination' />
+                  <column datatype='real' name='inclination_error_min' />
+                  <column datatype='real' name='inclination_error_max' />
+                  <column datatype='real' name='angular_distance' />
+                  <column datatype='date' date-parse-format='yyyy' name='discovered' />
+                  <column datatype='date' name='updated' />
+                  <column datatype='real' name='omega' />
+                  <column datatype='real' name='omega_error_min' />
+                  <column datatype='real' name='omega_error_max' />
+                  <column datatype='real' name='tperi' />
+                  <column datatype='real' name='tperi_error_min' />
+                  <column datatype='real' name='tperi_error_max' />
+                  <column datatype='real' name='tconj' />
+                  <column datatype='real' name='tconj_error_min' />
+                  <column datatype='real' name='tconj_error_max' />
+                  <column datatype='real' name='tzero_tr' />
+                  <column datatype='real' name='tzero_tr_error_min' />
+                  <column datatype='real' name='tzero_tr_error_max' />
+                  <column datatype='real' name='tzero_tr_sec' />
+                  <column datatype='real' name='tzero_tr_sec_error_min' />
+                  <column datatype='real' name='tzero_tr_sec_error_max' />
+                  <column datatype='real' name='lambda_angle' />
+                  <column datatype='real' name='lambda_angle_error_min' />
+                  <column datatype='real' name='lambda_angle_error_max' />
+                  <column datatype='real' name='impact_parameter' />
+                  <column datatype='real' name='impact_parameter_error_min' />
+                  <column datatype='real' name='impact_parameter_error_max' />
+                  <column datatype='real' name='tzero_vr' />
+                  <column datatype='real' name='tzero_vr_error_min' />
+                  <column datatype='real' name='tzero_vr_error_max' />
+                  <column datatype='real' name='k' />
+                  <column datatype='real' name='k_error_min' />
+                  <column datatype='real' name='k_error_max' />
+                  <column datatype='real' name='temp_calculated' />
+                  <column datatype='real' name='temp_calculated_error_min' />
+                  <column datatype='real' name='temp_calculated_error_max' />
+                  <column datatype='real' name='temp_measured' />
+                  <column datatype='string' name='hot_point_lon' />
+                  <column datatype='real' name='geometric_albedo' />
+                  <column datatype='real' name='geometric_albedo_error_min' />
+                  <column datatype='real' name='geometric_albedo_error_max' />
+                  <column datatype='real' name='log_g' />
+                  <column datatype='string' name='publication' />
+                  <column datatype='string' name='detection_type' />
+                  <column datatype='string' name='mass_detection_type' />
+                  <column datatype='string' name='radius_detection_type' />
+                  <column datatype='string' name='alternate_names' />
+                  <column datatype='string' name='molecules' />
+                  <column datatype='string' name='star_name' />
+                  <column datatype='real' name='ra' />
+                  <column datatype='real' name='dec' />
+                  <column datatype='real' name='mag_v' />
+                  <column datatype='real' name='mag_i' />
+                  <column datatype='real' name='mag_j' />
+                  <column datatype='real' name='mag_h' />
+                  <column datatype='real' name='mag_k' />
+                  <column datatype='real' name='star_distance' />
+                  <column datatype='real' name='star_distance_error_min' />
+                  <column datatype='real' name='star_distance_error_max' />
+                  <column datatype='real' name='star_metallicity' />
+                  <column datatype='real' name='star_metallicity_error_min' />
+                  <column datatype='real' name='star_metallicity_error_max' />
+                  <column datatype='real' name='star_mass' />
+                  <column datatype='real' name='star_mass_error_min' />
+                  <column datatype='real' name='star_mass_error_max' />
+                  <column datatype='real' name='star_radius' />
+                  <column datatype='real' name='star_radius_error_min' />
+                  <column datatype='real' name='star_radius_error_max' />
+                  <column datatype='string' name='star_sp_type' />
+                  <column datatype='real' name='star_age' />
+                  <column datatype='real' name='star_age_error_min' />
+                  <column datatype='real' name='star_age_error_max' />
+                  <column datatype='real' name='star_teff' />
+                  <column datatype='real' name='star_teff_error_min' />
+                  <column datatype='real' name='star_teff_error_max' />
+                  <column datatype='string' name='star_detected_disc' />
+                  <column datatype='string' name='star_magnetic_field' />
+                  <column datatype='string' name='star_alternate_names' />
+                  <column datatype='string' name='Planet' />
+                  <column datatype='string' name='Table Name' />
+                </columns>
+                <relation connection='textscan.17utrro0snxiz419sfhsl0i3q96k' name='exoplanet.eu_catalog.csv' table='[exoplanet.eu_catalog#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='string' name='# name' ordinal='0' />
+                    <column datatype='string' name='planet_status' ordinal='1' />
+                    <column datatype='real' name='mass' ordinal='2' />
+                    <column datatype='real' name='mass_error_min' ordinal='3' />
+                    <column datatype='real' name='mass_error_max' ordinal='4' />
+                    <column datatype='real' name='mass_sini' ordinal='5' />
+                    <column datatype='real' name='mass_sini_error_min' ordinal='6' />
+                    <column datatype='real' name='mass_sini_error_max' ordinal='7' />
+                    <column datatype='real' name='radius' ordinal='8' />
+                    <column datatype='real' name='radius_error_min' ordinal='9' />
+                    <column datatype='real' name='radius_error_max' ordinal='10' />
+                    <column datatype='real' name='orbital_period' ordinal='11' />
+                    <column datatype='real' name='orbital_period_error_min' ordinal='12' />
+                    <column datatype='real' name='orbital_period_error_max' ordinal='13' />
+                    <column datatype='real' name='semi_major_axis' ordinal='14' />
+                    <column datatype='real' name='semi_major_axis_error_min' ordinal='15' />
+                    <column datatype='real' name='semi_major_axis_error_max' ordinal='16' />
+                    <column datatype='real' name='eccentricity' ordinal='17' />
+                    <column datatype='real' name='eccentricity_error_min' ordinal='18' />
+                    <column datatype='real' name='eccentricity_error_max' ordinal='19' />
+                    <column datatype='real' name='inclination' ordinal='20' />
+                    <column datatype='real' name='inclination_error_min' ordinal='21' />
+                    <column datatype='real' name='inclination_error_max' ordinal='22' />
+                    <column datatype='real' name='angular_distance' ordinal='23' />
+                    <column datatype='integer' name='discovered' ordinal='24' />
+                    <column datatype='date' name='updated' ordinal='25' />
+                    <column datatype='real' name='omega' ordinal='26' />
+                    <column datatype='real' name='omega_error_min' ordinal='27' />
+                    <column datatype='real' name='omega_error_max' ordinal='28' />
+                    <column datatype='real' name='tperi' ordinal='29' />
+                    <column datatype='real' name='tperi_error_min' ordinal='30' />
+                    <column datatype='real' name='tperi_error_max' ordinal='31' />
+                    <column datatype='real' name='tconj' ordinal='32' />
+                    <column datatype='real' name='tconj_error_min' ordinal='33' />
+                    <column datatype='real' name='tconj_error_max' ordinal='34' />
+                    <column datatype='real' name='tzero_tr' ordinal='35' />
+                    <column datatype='real' name='tzero_tr_error_min' ordinal='36' />
+                    <column datatype='real' name='tzero_tr_error_max' ordinal='37' />
+                    <column datatype='real' name='tzero_tr_sec' ordinal='38' />
+                    <column datatype='real' name='tzero_tr_sec_error_min' ordinal='39' />
+                    <column datatype='real' name='tzero_tr_sec_error_max' ordinal='40' />
+                    <column datatype='real' name='lambda_angle' ordinal='41' />
+                    <column datatype='real' name='lambda_angle_error_min' ordinal='42' />
+                    <column datatype='real' name='lambda_angle_error_max' ordinal='43' />
+                    <column datatype='real' name='impact_parameter' ordinal='44' />
+                    <column datatype='real' name='impact_parameter_error_min' ordinal='45' />
+                    <column datatype='real' name='impact_parameter_error_max' ordinal='46' />
+                    <column datatype='real' name='tzero_vr' ordinal='47' />
+                    <column datatype='real' name='tzero_vr_error_min' ordinal='48' />
+                    <column datatype='real' name='tzero_vr_error_max' ordinal='49' />
+                    <column datatype='real' name='k' ordinal='50' />
+                    <column datatype='real' name='k_error_min' ordinal='51' />
+                    <column datatype='real' name='k_error_max' ordinal='52' />
+                    <column datatype='real' name='temp_calculated' ordinal='53' />
+                    <column datatype='real' name='temp_calculated_error_min' ordinal='54' />
+                    <column datatype='real' name='temp_calculated_error_max' ordinal='55' />
+                    <column datatype='real' name='temp_measured' ordinal='56' />
+                    <column datatype='string' name='hot_point_lon' ordinal='57' />
+                    <column datatype='real' name='geometric_albedo' ordinal='58' />
+                    <column datatype='real' name='geometric_albedo_error_min' ordinal='59' />
+                    <column datatype='real' name='geometric_albedo_error_max' ordinal='60' />
+                    <column datatype='real' name='log_g' ordinal='61' />
+                    <column datatype='string' name='publication' ordinal='62' />
+                    <column datatype='string' name='detection_type' ordinal='63' />
+                    <column datatype='string' name='mass_detection_type' ordinal='64' />
+                    <column datatype='string' name='radius_detection_type' ordinal='65' />
+                    <column datatype='string' name='alternate_names' ordinal='66' />
+                    <column datatype='string' name='molecules' ordinal='67' />
+                    <column datatype='string' name='star_name' ordinal='68' />
+                    <column datatype='real' name='ra' ordinal='69' />
+                    <column datatype='real' name='dec' ordinal='70' />
+                    <column datatype='real' name='mag_v' ordinal='71' />
+                    <column datatype='real' name='mag_i' ordinal='72' />
+                    <column datatype='real' name='mag_j' ordinal='73' />
+                    <column datatype='real' name='mag_h' ordinal='74' />
+                    <column datatype='real' name='mag_k' ordinal='75' />
+                    <column datatype='real' name='star_distance' ordinal='76' />
+                    <column datatype='real' name='star_distance_error_min' ordinal='77' />
+                    <column datatype='real' name='star_distance_error_max' ordinal='78' />
+                    <column datatype='real' name='star_metallicity' ordinal='79' />
+                    <column datatype='real' name='star_metallicity_error_min' ordinal='80' />
+                    <column datatype='real' name='star_metallicity_error_max' ordinal='81' />
+                    <column datatype='real' name='star_mass' ordinal='82' />
+                    <column datatype='real' name='star_mass_error_min' ordinal='83' />
+                    <column datatype='real' name='star_mass_error_max' ordinal='84' />
+                    <column datatype='real' name='star_radius' ordinal='85' />
+                    <column datatype='real' name='star_radius_error_min' ordinal='86' />
+                    <column datatype='real' name='star_radius_error_max' ordinal='87' />
+                    <column datatype='string' name='star_sp_type' ordinal='88' />
+                    <column datatype='real' name='star_age' ordinal='89' />
+                    <column datatype='real' name='star_age_error_min' ordinal='90' />
+                    <column datatype='real' name='star_age_error_max' ordinal='91' />
+                    <column datatype='real' name='star_teff' ordinal='92' />
+                    <column datatype='real' name='star_teff_error_min' ordinal='93' />
+                    <column datatype='real' name='star_teff_error_max' ordinal='94' />
+                    <column datatype='string' name='star_detected_disc' ordinal='95' />
+                    <column datatype='string' name='star_magnetic_field' ordinal='96' />
+                    <column datatype='string' name='star_alternate_names' ordinal='97' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.17utrro0snxiz419sfhsl0i3q96k' name='planets.csv' table='[planets#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='string' name='Planet' ordinal='0' />
+                    <column datatype='real' name='Mass' ordinal='1' />
+                    <column datatype='real' name='Radius' ordinal='2' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Highlight1' name='[Action1_C604E9756F924ACF89AD488D53D9087B]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 2' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Detection Type' />
+        <param name='target' value='Dashboard 2' />
+      </command>
+    </action>
+    <action caption='Filter1' name='[Action2_D57950A9904E4EE9AA0B6A0AF7C51298]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 3' type='sheet' />
+      <link caption='Filter1' delimiter=',' escape='\' expression='tsl:Dashboard%203?%5Bfederated.03bnm1b0vs6r0q13hkead06g997y%5D.%5Bdetection_type%5D~s0=&lt;[federated.03bnm1b0vs6r0q13hkead06g997y].[detection_type]~na&gt;' include-null='true' multi-select='true' url-escape='true' />
+      <command command='tsc:tsl-filter'>
+        <param name='target' value='Dashboard 3' />
+      </command>
+    </action>
+    <action caption='Highlight 1 (generated)' name='[Action3_23276768C483462B976BEDB8F3A1480E]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Sheet 4' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Bigger size' />
+        <param name='target' value='Sheet 4' />
+      </command>
+    </action>
+    <datasources>
+      <datasource caption='exoplanet.eu_catalog' name='federated.03bnm1b0vs6r0q13hkead06g997y' />
+    </datasources>
+    <datasource-dependencies datasource='federated.03bnm1b0vs6r0q13hkead06g997y'>
+      <column caption='Detection Type' datatype='string' name='[detection_type]' role='dimension' type='nominal' />
+    </datasource-dependencies>
+  </actions>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='exoplanet.eu_catalog' name='federated.03bnm1b0vs6r0q13hkead06g997y' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03bnm1b0vs6r0q13hkead06g997y'>
+            <column caption='# Name' datatype='string' name='[# name]' role='dimension' type='nominal' />
+            <column caption='Star Class' datatype='string' name='[Calculation_229965108913614848]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='LEFT([star_sp_type],1)' />
+            </column>
+            <column-instance column='[# name]' derivation='Attribute' name='[attr:# name:nk]' pivot='key' type='nominal' />
+            <column caption='Detection Type' datatype='string' name='[detection_type]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Mass' datatype='real' name='[mass]' role='dimension' type='quantitative' />
+            <column-instance column='[Calculation_229965108913614848]' derivation='None' name='[none:Calculation_229965108913614848:nk]' pivot='key' type='nominal' />
+            <column-instance column='[detection_type]' derivation='None' name='[none:detection_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[mass]' derivation='None' name='[none:mass:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[radius]' derivation='None' name='[none:radius:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Sum' caption='Radius' datatype='real' name='[radius]' role='dimension' type='quantitative' />
+            <column caption='Star Sp Type' datatype='string' name='[star_sp_type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.03bnm1b0vs6r0q13hkead06g997y].[none:Calculation_229965108913614848:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Calculation_229965108913614848:nk]' member='&quot;A&quot;' />
+              <groupfilter function='member' level='[none:Calculation_229965108913614848:nk]' member='&quot;B&quot;' />
+              <groupfilter from='&quot;D&quot;' function='range' level='[none:Calculation_229965108913614848:nk]' to='&quot;K&quot;' />
+              <groupfilter function='member' level='[none:Calculation_229965108913614848:nk]' member='&quot;M&quot;' />
+              <groupfilter function='member' level='[none:Calculation_229965108913614848:nk]' member='&quot;W&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.03bnm1b0vs6r0q13hkead06g997y].[none:Calculation_229965108913614848:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;W&quot;</bucket>
+              <bucket>&quot;B&quot;</bucket>
+              <bucket>&quot;A&quot;</bucket>
+              <bucket>&quot;F&quot;</bucket>
+              <bucket>&quot;G&quot;</bucket>
+              <bucket>&quot;K&quot;</bucket>
+              <bucket>&quot;M&quot;</bucket>
+              <bucket>&quot;D&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='quantitative' column='[federated.03bnm1b0vs6r0q13hkead06g997y].[none:mass:qk]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.03bnm1b0vs6r0q13hkead06g997y].[none:radius:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:radius:qk]</column>
+            <column>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:mass:qk]</column>
+            <column>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:Calculation_229965108913614848:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' value='#f5f5f5' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='36' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#333333' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.03bnm1b0vs6r0q13hkead06g997y].[none:Calculation_229965108913614848:nk]' />
+              <tooltip column='[federated.03bnm1b0vs6r0q13hkead06g997y].[attr:# name:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='shape' value=':filled/circle' />
+                <format attr='size' value='1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:radius:qk]</rows>
+        <cols>([federated.03bnm1b0vs6r0q13hkead06g997y].[none:detection_type:nk] * [federated.03bnm1b0vs6r0q13hkead06g997y].[none:mass:qk])</cols>
+      </table>
+      <simple-id uuid='{3B6B86FC-6BF2-43C8-9B3F-3F8547240F70}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='exoplanet.eu_catalog' name='federated.03bnm1b0vs6r0q13hkead06g997y' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03bnm1b0vs6r0q13hkead06g997y'>
+            <column caption='# Name' datatype='string' name='[# name]' role='dimension' type='nominal' />
+            <column-instance column='[# name]' derivation='Attribute' name='[attr:# name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[detection_type]' derivation='Count' name='[cnt:detection_type:qk]' pivot='key' type='quantitative' />
+            <column caption='Detection Type' datatype='string' name='[detection_type]' role='dimension' type='nominal' />
+            <column caption='Discovered' datatype='date' name='[discovered]' role='dimension' type='quantitative' />
+            <column-instance column='[detection_type]' derivation='None' name='[none:detection_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[star_distance]' derivation='None' name='[none:star_distance:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Sum' caption='Star Distance' datatype='real' name='[star_distance]' role='dimension' type='quantitative' />
+            <column-instance column='[discovered]' derivation='Year-Trunc' name='[tyr:discovered:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.03bnm1b0vs6r0q13hkead06g997y].[none:detection_type:nk]' direction='DESC' using='[federated.03bnm1b0vs6r0q13hkead06g997y].[cnt:detection_type:qk]' />
+          <filter class='quantitative' column='[federated.03bnm1b0vs6r0q13hkead06g997y].[none:star_distance:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:star_distance:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.03bnm1b0vs6r0q13hkead06g997y].[none:star_distance:qk]' field-type='quantitative' scale='log' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.03bnm1b0vs6r0q13hkead06g997y].[none:detection_type:nk]' />
+              <tooltip column='[federated.03bnm1b0vs6r0q13hkead06g997y].[attr:# name:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='shape' value=':filled/circle' />
+                <format attr='mark-transparency' value='193' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:star_distance:qk]</rows>
+        <cols>[federated.03bnm1b0vs6r0q13hkead06g997y].[tyr:discovered:qk]</cols>
+      </table>
+      <simple-id uuid='{FA5E9AAA-AE11-4A32-9273-777BAD155AAB}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='exoplanet.eu_catalog' name='federated.03bnm1b0vs6r0q13hkead06g997y' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03bnm1b0vs6r0q13hkead06g997y'>
+            <column caption='# Name' datatype='string' name='[# name]' role='dimension' type='nominal' />
+            <column caption='Count names' datatype='integer' name='[Calculation_229965109124161537]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([# name])' />
+            </column>
+            <column caption='Detection Type' datatype='string' name='[detection_type]' role='dimension' type='nominal' />
+            <column-instance column='[detection_type]' derivation='None' name='[none:detection_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_229965109124161537]' derivation='User' name='[usr:Calculation_229965109124161537:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.03bnm1b0vs6r0q13hkead06g997y].[none:detection_type:nk]'>
+            <groupfilter function='level-members' level='[none:detection_type:nk]' user:ui-enumeration='all' user:ui-exclude='true' user:ui-marker='enumerate' />
+          </filter>
+          <computed-sort column='[federated.03bnm1b0vs6r0q13hkead06g997y].[none:detection_type:nk]' direction='DESC' using='[federated.03bnm1b0vs6r0q13hkead06g997y].[usr:Calculation_229965109124161537:qk]' />
+          <slices>
+            <column>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:detection_type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.03bnm1b0vs6r0q13hkead06g997y].[none:detection_type:nk]' value='104' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.03bnm1b0vs6r0q13hkead06g997y].[none:detection_type:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.03bnm1b0vs6r0q13hkead06g997y].[usr:Calculation_229965109124161537:qk]</rows>
+        <cols>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:detection_type:nk]</cols>
+      </table>
+      <simple-id uuid='{0F196551-BE2A-4E0A-9B0F-845D9EE7CC55}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='16'>Size and mass of known exoplanets</run>
+            <run fontalignment='2'>Æ&#10;</run>
+            <run fontalignment='2' fontsize='11'>Most known exoplanets are gas giants often bigger than Jupiter.</run>
+            <run fontalignment='2'>Æ&#10;</run>
+            <run fontalignment='2' fontsize='11'>We know few silicate exoplanets like Earth.</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='exoplanet.eu_catalog' name='federated.03bnm1b0vs6r0q13hkead06g997y' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03bnm1b0vs6r0q13hkead06g997y'>
+            <column caption='# Name' datatype='string' name='[# name]' role='dimension' type='nominal' />
+            <column caption='Bigger size' datatype='real' name='[Calculation_1019502419259830274]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='IF ([Planet] &lt;&gt; &quot;NULL&quot;) THEN 1.6 ELSE 1.5 END' />
+            </column>
+            <column caption='Planet Name' datatype='string' name='[Calculation_1019502419302301699]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF ([Planet] &lt;&gt; &quot;NULL&quot;) THEN [Planet] ELSE [# name] END' />
+            </column>
+            <column caption='Planet1' datatype='string' name='[Planet]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='%null%' value='Exoplanet' />
+              </aliases>
+            </column>
+            <column caption='Detection Type' datatype='string' name='[detection_type]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Mass' datatype='real' name='[mass]' role='dimension' type='quantitative' />
+            <column-instance column='[Calculation_1019502419259830274]' derivation='None' name='[none:Calculation_1019502419259830274:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_1019502419302301699]' derivation='None' name='[none:Calculation_1019502419302301699:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Planet]' derivation='None' name='[none:Planet:nk]' pivot='key' type='nominal' />
+            <column-instance column='[mass]' derivation='None' name='[none:mass:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[radius]' derivation='None' name='[none:radius:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Sum' caption='Radius' datatype='real' name='[radius]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.03bnm1b0vs6r0q13hkead06g997y].[Action (Detection Type)]'>
+            <groupfilter function='level-members' level='[detection_type]' user:ui-action-filter='[Action2_D57950A9904E4EE9AA0B6A0AF7C51298]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.03bnm1b0vs6r0q13hkead06g997y].[Exclusions (Bigger size,Mass,Planet,Radius)]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='level-members' level='[none:Calculation_1019502419259830274:ok]' />
+                <groupfilter function='level-members' level='[none:mass:qk]' />
+                <groupfilter function='level-members' level='[none:Planet:nk]' />
+                <groupfilter function='level-members' level='[none:radius:qk]' />
+              </groupfilter>
+              <groupfilter function='reorder-dimensionality'>
+                <groupfilter function='crossjoin'>
+                  <groupfilter function='member' level='[none:Calculation_1019502419259830274:ok]' member='1.6000000000000001' />
+                  <groupfilter function='crossjoin'>
+                    <groupfilter function='member' level='[none:Planet:nk]' member='&quot;Pluto&quot;' />
+                    <groupfilter function='crossjoin'>
+                      <groupfilter function='member' level='[none:mass:qk]' member='7.6923076923076919e-06' />
+                      <groupfilter function='member' level='[none:radius:qk]' member='0.0082876405751692497' />
+                    </groupfilter>
+                  </groupfilter>
+                </groupfilter>
+                <order>
+                  <hierarchy name='[none:Calculation_1019502419259830274:ok]' />
+                  <hierarchy name='[none:mass:qk]' />
+                  <hierarchy name='[none:Planet:nk]' />
+                  <hierarchy name='[none:radius:qk]' />
+                </order>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.03bnm1b0vs6r0q13hkead06g997y].[none:Planet:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Planet:nk]' member='%null%' />
+              <groupfilter from='&quot;Earth&quot;' function='range' level='[none:Planet:nk]' to='&quot;Neptune&quot;' />
+              <groupfilter from='&quot;Saturn&quot;' function='range' level='[none:Planet:nk]' to='&quot;Venus&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.03bnm1b0vs6r0q13hkead06g997y].[none:Planet:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Mercury&quot;</bucket>
+              <bucket>&quot;Venus&quot;</bucket>
+              <bucket>&quot;Earth&quot;</bucket>
+              <bucket>&quot;Mars&quot;</bucket>
+              <bucket>&quot;Jupiter&quot;</bucket>
+              <bucket>&quot;Saturn&quot;</bucket>
+              <bucket>&quot;Uranus&quot;</bucket>
+              <bucket>&quot;Neptune&quot;</bucket>
+              <bucket>%null%</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='quantitative' column='[federated.03bnm1b0vs6r0q13hkead06g997y].[none:mass:qk]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.03bnm1b0vs6r0q13hkead06g997y].[none:radius:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:mass:qk]</column>
+            <column>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:radius:qk]</column>
+            <column>[federated.03bnm1b0vs6r0q13hkead06g997y].[Exclusions (Bigger size,Mass,Planet,Radius)]</column>
+            <column>[federated.03bnm1b0vs6r0q13hkead06g997y].[Action (Detection Type)]</column>
+            <column>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:Planet:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.03bnm1b0vs6r0q13hkead06g997y].[none:radius:qk]' field-type='quantitative' max='8.0' min='0.02' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.03bnm1b0vs6r0q13hkead06g997y].[none:mass:qk]' field-type='quantitative' major-origin='1.0' major-spacing='10.0' scale='log' scope='rows' type='space' />
+            <encoding attr='space' class='1' field='[federated.03bnm1b0vs6r0q13hkead06g997y].[none:mass:qk]' field-type='quantitative' fold='true' scale='log' scope='rows' type='space' />
+            <format attr='width' field='[federated.03bnm1b0vs6r0q13hkead06g997y].[none:mass:qk]' value='76' />
+            <format attr='auto-subtitle' class='0' field='[federated.03bnm1b0vs6r0q13hkead06g997y].[none:mass:qk]' scope='rows' value='true' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size' field='[federated.03bnm1b0vs6r0q13hkead06g997y].[none:Calculation_1019502419259830274:ok]' field-type='ordinal' max-size='1' min-size='0.50831' type='catsize' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' data-class='total' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#1b1b1b' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='shape' value=':filled/circle' />
+                <format attr='size' value='0.75762432813644409' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-transparency' value='134' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='7' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.03bnm1b0vs6r0q13hkead06g997y].[none:mass:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='shape' value=':filled/circle' />
+                <format attr='size' value='0.64767956733703613' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-transparency' value='65' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='8' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.03bnm1b0vs6r0q13hkead06g997y].[none:mass:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.03bnm1b0vs6r0q13hkead06g997y].[none:Planet:nk]' />
+              <size column='[federated.03bnm1b0vs6r0q13hkead06g997y].[none:Calculation_1019502419259830274:ok]' />
+              <text column='[federated.03bnm1b0vs6r0q13hkead06g997y].[none:Calculation_1019502419302301699:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='wrap' value='auto' />
+                <format attr='vertical-align' value='top' />
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='match' />
+                <format attr='font-size' value='11' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='shape' value=':filled/circle' />
+                <format attr='size' value='0.60171049833297729' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='selection' />
+                <format attr='mark-transparency' value='255' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.03bnm1b0vs6r0q13hkead06g997y].[none:mass:qk] + [federated.03bnm1b0vs6r0q13hkead06g997y].[none:mass:qk])</rows>
+        <cols>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:radius:qk]</cols>
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor y-index='1'>
+                  <x-fields y-index='1'>
+                    <field>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:radius:qk]</field>
+                  </x-fields>
+                  <y-fields y-index='1'>
+                    <field>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:mass:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:Calculation_1019502419259830274:ok]</field>
+                  <field>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:Calculation_1019502419302301699:nk]</field>
+                  <field>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:Planet:nk]</field>
+                  <field>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:mass:qk]</field>
+                  <field>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:radius:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1.6000000000000001</value>
+                <value>&quot;Neptune&quot;</value>
+                <value>&quot;Neptune&quot;</value>
+                <value>0.053740779768177031</value>
+                <value>0.34638840709450008</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor y-index='1'>
+                  <x-fields y-index='1'>
+                    <field>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:radius:qk]</field>
+                  </x-fields>
+                  <y-fields y-index='1'>
+                    <field>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:mass:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:Calculation_1019502419259830274:ok]</field>
+                  <field>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:Calculation_1019502419302301699:nk]</field>
+                  <field>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:Planet:nk]</field>
+                  <field>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:mass:qk]</field>
+                  <field>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:radius:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1.6000000000000001</value>
+                <value>&quot;Earth&quot;</value>
+                <value>&quot;Earth&quot;</value>
+                <value>0.0031454162276080078</value>
+                <value>0.089212779052201652</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='2' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor y-index='1'>
+                  <x-fields y-index='1'>
+                    <field>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:radius:qk]</field>
+                  </x-fields>
+                  <y-fields y-index='1'>
+                    <field>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:mass:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:Calculation_1019502419259830274:ok]</field>
+                  <field>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:Calculation_1019502419302301699:nk]</field>
+                  <field>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:Planet:nk]</field>
+                  <field>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:mass:qk]</field>
+                  <field>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:radius:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1.6000000000000001</value>
+                <value>&quot;Mars&quot;</value>
+                <value>&quot;Mars&quot;</value>
+                <value>0.00033825079030558401</value>
+                <value>0.047501818385273883</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='3' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor y-index='1'>
+                  <x-fields y-index='1'>
+                    <field>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:radius:qk]</field>
+                  </x-fields>
+                  <y-fields y-index='1'>
+                    <field>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:mass:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:Calculation_1019502419259830274:ok]</field>
+                  <field>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:Calculation_1019502419302301699:nk]</field>
+                  <field>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:Planet:nk]</field>
+                  <field>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:mass:qk]</field>
+                  <field>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:radius:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1.6000000000000001</value>
+                <value>&quot;Mercury&quot;</value>
+                <value>&quot;Mercury&quot;</value>
+                <value>0.00017386722866174901</value>
+                <value>0.034122699043249598</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='5' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor y-index='1'>
+                  <x-fields y-index='1'>
+                    <field>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:radius:qk]</field>
+                  </x-fields>
+                  <y-fields y-index='1'>
+                    <field>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:mass:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:Calculation_1019502419259830274:ok]</field>
+                  <field>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:Calculation_1019502419302301699:nk]</field>
+                  <field>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:Planet:nk]</field>
+                  <field>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:mass:qk]</field>
+                  <field>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:radius:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1.6000000000000001</value>
+                <value>&quot;Saturn&quot;</value>
+                <value>&quot;Saturn&quot;</value>
+                <value>0.29926238145416229</value>
+                <value>0.84300341296928327</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='7' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor y-index='1'>
+                  <x-fields y-index='1'>
+                    <field>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:radius:qk]</field>
+                  </x-fields>
+                  <y-fields y-index='1'>
+                    <field>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:mass:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:Calculation_1019502419259830274:ok]</field>
+                  <field>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:Calculation_1019502419302301699:nk]</field>
+                  <field>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:Planet:nk]</field>
+                  <field>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:mass:qk]</field>
+                  <field>[federated.03bnm1b0vs6r0q13hkead06g997y].[none:radius:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1.6000000000000001</value>
+                <value>&quot;Jupiter&quot;</value>
+                <value>&quot;Jupiter&quot;</value>
+                <value>1.0</value>
+                <value>1.0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{8BD78D9E-CE23-465C-AAC1-466A53B3DB58}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <style />
+      <size maxheight='900' maxwidth='1500' minheight='900' minwidth='1500' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98222' id='7' param='horz' type-v2='layout-flow' w='98934' x='533' y='889'>
+            <zone h='98222' id='5' type-v2='layout-basic' w='88267' x='533' y='889'>
+              <zone h='98222' id='3' name='Sheet 2' w='64134' x='533' y='889'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='98222' id='9' name='Sheet 3' w='24133' x='64667' y='889'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98222' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='10667' x='88800' y='889'>
+              <zone h='20667' id='8' name='Sheet 2' pane-specification-id='0' param='[federated.03bnm1b0vs6r0q13hkead06g997y].[none:detection_type:nk]' type-v2='color' w='10667' x='88800' y='889'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='13' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98222' id='12' param='vert' type-v2='layout-flow' w='98934' x='533' y='889'>
+                <zone fixed-size='280' h='98222' id='3' is-fixed='true' name='Sheet 2' w='64134' x='533' y='889'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='20667' id='8' name='Sheet 2' pane-specification-id='0' param='[federated.03bnm1b0vs6r0q13hkead06g997y].[none:detection_type:nk]' type-v2='color' w='10667' x='88800' y='889'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98222' id='9' is-fixed='true' name='Sheet 3' w='24133' x='64667' y='889'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{9849F1CC-747F-492D-A181-652758AB220B}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 3'>
+      <style />
+      <size maxheight='900' maxwidth='1600' minheight='900' minwidth='1600' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98222' id='7' param='horz' type-v2='layout-flow' w='99000' x='500' y='889'>
+            <zone h='98222' id='5' type-v2='layout-basic' w='89000' x='500' y='889'>
+              <zone h='98222' id='3' name='Sheet 4' w='66125' x='500' y='889'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='98222' id='10' name='Sheet 3' w='22875' x='66625' y='889'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98222' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='10000' x='89500' y='889'>
+              <zone h='25111' id='8' name='Sheet 4' pane-specification-id='8' param='[federated.03bnm1b0vs6r0q13hkead06g997y].[none:Planet:nk]' type-v2='color' w='10000' x='89500' y='889'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='7333' id='9' name='Sheet 4' pane-specification-id='8' param='[federated.03bnm1b0vs6r0q13hkead06g997y].[none:Calculation_1019502419259830274:ok]' type-v2='size' w='10000' x='89500' y='26000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='22889' id='11' name='Sheet 3' pane-specification-id='0' param='[federated.03bnm1b0vs6r0q13hkead06g997y].[none:detection_type:nk]' type-v2='color' w='10000' x='89500' y='33333'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{97097ADB-642D-4924-8578-4827A33C8AAF}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='6' param='[federated.03bnm1b0vs6r0q13hkead06g997y].[none:Calculation_229965108913614848:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6C7C077C-CBF9-4AA3-B7CA-E4E027B03C6D}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.03bnm1b0vs6r0q13hkead06g997y].[none:detection_type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A6483DA8-97F8-4CA1-81C3-E208771FA584}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.03bnm1b0vs6r0q13hkead06g997y].[none:detection_type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F869B907-E7C4-457F-A716-7541C611317F}' />
+    </window>
+    <window class='dashboard' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='Sheet 2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 3'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='9' />
+      <simple-id uuid='{5573DAC1-9DDB-4D6E-8088-545028B09AAB}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='8' param='[federated.03bnm1b0vs6r0q13hkead06g997y].[none:Planet:nk]' type='color' />
+            <card pane-specification-id='8' param='[federated.03bnm1b0vs6r0q13hkead06g997y].[none:Calculation_1019502419259830274:ok]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{85239F5C-C891-468E-89F6-43AA7A29BAB0}' />
+    </window>
+    <window class='dashboard' name='Dashboard 3'>
+      <viewpoints>
+        <viewpoint name='Sheet 3'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 4'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{D006DE64-2C8D-46EC-844B-E135BB8C5A88}' />
+    </window>
+  </windows>
+</workbook>
